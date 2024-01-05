@@ -79,7 +79,7 @@ const bootstrap = () =>{
 
 bootstrap();
 
-app.post('web_data',async(req,res)=>{
+app.post('/web_data',async(req,res)=>{
     const {queryId, products} = req.body
 
     try{
