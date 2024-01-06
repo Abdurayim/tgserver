@@ -12,10 +12,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const bootstrap = () =>{
+
     bot.setMyCommands([
-        {command: '/start', description: "Taomlar haqida ma'lumot"},
-        {command: '/foods', description: "Barcha taomlar"},
+        {command: '/start', description: "Ifooderga xush kelibsiz"},
+        {command: '/foods', description: "Barcha taomlarni ko'rish"},
 
     ])
 
@@ -75,9 +75,9 @@ const bootstrap = () =>{
             }
         }
     })
-}
 
-bootstrap();
+
+
 
 app.post('/web_data',async(req,res)=>{
     const {queryId, products} = req.body
